@@ -1,0 +1,38 @@
+.mainScene {
+    position: relative;
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+.platform{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    top: 580px;
+    border-radius: 10px;
+}
+
+.ball{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: red;
+    border-radius: 50px;
+}
+
+.block{
+    position: absolute;
+    width: 160px;
+    height: 80px;
+}
+
+.final{
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+    color: red;
+    font-size: 62pt;
+    text-align: center;
+}
