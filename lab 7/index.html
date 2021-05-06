@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap/bootstrap.LUX.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="row">
+                <h1 id = "_cur_track">Выберите трек</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 slidecontainer">
+                    <input type="range" min="0" max="1000" value="0" class="slider" id="_timeline">
+                </div>
+                <div class="col-md-2">
+                    <label for="_timeline" id = "_time_value">0 : 0</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="_volume">Громкость</label>
+                </div>
+                <div class="col-md-7">
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="100" class="slider" id="_volume">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="_volume" id = "_volume_value"> 1 </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="_pan"> Стерео-баланс </label>
+                </div>
+                <div class="col-md-7">
+                    <div class="slidecontainer">
+                        <input type="range" min="-100" max="100" value="0" class="slider" id="_pan">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for = "_pan" id = "_pan_value">0</label>
+                </div>
+            </div>
+
+            <div class="row col-md-12">
+                <button type="button" class="btn btn-outline-primary" id = "_btn_play_pause"><img class = "icon" src="img/play.png"/></button>
+                <button type="button" class="btn btn-outline-primary" id = "_btn_prew"><img class = "icon" src="img/previous.png"/></button>
+                <button type="button" class="btn btn-outline-primary" id = "_btn_next"><img class = "icon" src="img/next.png"/></button>
+                <button type="button" class="btn btn-outline-primary" id = "_btn_skip_back"><img class = "icon" src="img/skip_back.png"/></button>
+                <button type="button" class="btn btn-outline-primary" id = "_btn_skip_forward"><img class = "icon" src="img/skip_forward.png"/></button>
+                <button type="button" class="btn btn-outline-primary" id = "_btn_goto_prew_30"><img class = "icon" src="img/goto_prev_30.png"/></button>
+                <button type="button" class="btn btn-outline-primary" id = "_btn_goto_next_30"><img class = "icon" src="img/goto_next_30.png"/></button>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-outline-primary" id = "_btn_biquad"><img class = "icon" src="img/biquad_on.png"/></button>
+                </div>
+                <div class="col-md-10 like_btn">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="_biquad_frequency"> Частота </label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="slidecontainer">
+                                <input type="range" min="0" max="4000" value="0" class="slider" id="_biquad_frequency">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="_biquad_frequency" id = "_biquad_frequency_value">0</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="_biquad_gain"> Усиление </label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="slidecontainer">
+                                <input type="range" min="-100" max="100" value="0" class="slider" id="_biquad_gain">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="_biquad_gain" id = "_biquad_gain_value">0</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           <div class="row">
+               <div class="col-md-4"></div>
+               <div class="col-md-8 track-list">
+                    <label class="custom-file">
+                        <input type="file" id="_input_file" class="custom-file-input" accept="audio/*" style="width:600px"/>
+                        <span class="custom-file-control"> Добавить трек </span>
+                    </label>
+               </div>
+            </div>
+
+           <div class="row">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th> Трек </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+           </div>
+
+        </div>
+
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
